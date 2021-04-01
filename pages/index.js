@@ -240,7 +240,7 @@ const MailTo = () => {
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
       <Layout>
-        <section style={{ width: '100%' }}>
+        <section id="mailto" style={{ width: '100%' }}>
           <WindowTopAndBottom>
             <h1>
               Mailto.now.sh{' '}
@@ -273,7 +273,7 @@ const MailTo = () => {
                   maxWidth: '70vw',
                 }}
               >
-                <code>{mailtoHref}</code>
+                <code id="output">{mailtoHref}</code>
               </div>
 
               <div className="buttons-wrapper">
