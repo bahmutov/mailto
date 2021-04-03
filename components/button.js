@@ -1,4 +1,4 @@
-export default (props) => (
+const Button = (props) => (
   <div>
     <input type="button" {...props} />
     <style jsx>{`
@@ -24,3 +24,5 @@ export default (props) => (
     `}</style>
   </div>
 );
+
+export default Button;
