@@ -1,8 +1,9 @@
 {
   "fixturesFolder": false,
   "supportFile": false,
-  "pluginsFile": false,
   "baseUrl": "http://localhost:3000",
   "viewportWidth": 1200,
-  "viewportHeight": 900
+  "viewportHeight": 900,
+  "testFiles": "README.md",
+  "integrationFolder": "."
 }
