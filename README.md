@@ -2,6 +2,9 @@
 
 ![Demo image](./media/demo.png)
 
+<details style="display:none">
+<summary>Demo image test</summary>
+
 <!-- fiddle Mailto screenshot -->
 ```js
 cy.visit('/'); // localhost:3000
@@ -15,6 +18,7 @@ cy.get('#output').should(
 cy.get('#mailto').screenshot('mailto');
 ```
 <!-- fiddle-end -->
+</details>
 
 ## Details
 
