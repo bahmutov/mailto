@@ -18,7 +18,7 @@ jobs:
       - name: Copy social image
         run: |
           npx copy-image \
-          -s cypress/screenshots/spec.js/mailto.png \
+          -s cypress/screenshots/README.md/mailto.png \
           -o media/demo.png
 
       # now let's see any changed files

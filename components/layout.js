@@ -24,7 +24,7 @@ const Wrench = styled(FaWrench)`
   }
 `;
 
-export default ({ children }) => {
+const Layout = ({ children }) => {
   useEffect(() => {
     /* eslint-disable */
     if (!window.GA_INITIALIZED) {
@@ -103,3 +103,5 @@ export default ({ children }) => {
     </OuterWrapper>
   );
 };
+
+export default Layout;
