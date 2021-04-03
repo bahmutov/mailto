@@ -23,6 +23,7 @@ jobs:
       - name: Checkout 🛎
         uses: actions/checkout@v2
 
+      # using https://github.com/bahmutov/dependency-version-badge
       - name: Update version badges 🏷
         run: npx -p dependency-version-badge update-badge cypress
 
@@ -30,5 +31,5 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Updated badges
-          branch: main
+          branch: master
           file_pattern: README.md
