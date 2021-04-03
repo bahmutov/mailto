@@ -1,0 +1,29 @@
+name: ci
+on: push
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      DEBUG: cypress-book
+    steps:
+      - name: Checkout 🛎
+        uses: actions/checkout@v2
+
+      - name: Run tests 🧪
+        uses: cypress-io/github-action@v2
+
+      - name: Copy social image
+        run: |
+          npx copy-image \
+          -s cypress/screenshots/spec.js/mailto.png \
+          -o media/demo.png
+
+      # now let's see any changed files
+      - name: See changed files 👀
+        run: git status
+
+      - name: Commit any changed files 💾
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Updated screenshots
+          file_pattern: '*.png'
